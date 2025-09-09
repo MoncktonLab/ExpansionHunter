@@ -20,7 +20,7 @@
 
 #include "graphcore/GraphCoordinates.hh"
 #include "graphutils/PairHashing.hh"
-
+#include <limits>
 #include <cassert>
 
 namespace graphtools
