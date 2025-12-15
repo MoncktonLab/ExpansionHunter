@@ -63,7 +63,7 @@ endif()
 
 ExternalProject_Add(Boost
 	BUILD_IN_SOURCE YES
-	URL https://archives.boost.io/release/1.73.0/source/boost_1_73_0.tar.bz2
+	URL https://archives.boost.io/release/1.74.0/source/boost_1_74_0.tar.bz2
 	DOWNLOAD_EXTRACT_TIMESTAMP OLD
 	PATCH_COMMAND ${BOOST_PATCH_COMMAND}
 	CONFIGURE_COMMAND ./bootstrap.sh --prefix=${installDir}
@@ -83,7 +83,7 @@ ExternalProject_Add(spdlog
 
 
 ExternalProject_Add(googletest
-	URL https://github.com/google/googletest/archive/refs/tags/v1.11.0.tar.gz
+	URL https://github.com/google/googletest/archive/refs/tags/v1.16.0.tar.gz
 	DOWNLOAD_EXTRACT_TIMESTAMP OLD
 	CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${installDir}
 		-DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}
